@@ -1,0 +1,67 @@
+body, html {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(to right, #900C3F, #571845, #C70039, #FF5733, #FFC30F); /* Gradient combining fiery and mystical colors */
+  color: #ffffff; /* White text for better contrast */
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent white for content areas */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 90%;
+}
+
+/* Styles for other elements remain the same */
+
+input[type="text"], input[type="number"] {
+  width: calc(50% - 20px); /* Adjust width */
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px; /* Align checkbox */
+}
+
+.btn {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #334296;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* More space between form and table */
+}
+
+.table th, .table td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1; /* Subtle hover effect */
+}
+
+@media (max-width: 768px) {
+  input[type="text"], input[type="number"], .btn {
+    width: 100%; /* Full width on smaller screens */
+    margin: 10px 0;
+  }
+}
